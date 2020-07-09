@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+{% block title %}
+    <title>Car safety evaluation</title>
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h1>Car Safety Detector</h1>
+ 
+    <hr>
+    <form action="/" method="POST">
+        
+            <div class="col-xs-4">
+                <h3>Buying:</h3>
+                <label for="buying">(Overall price of car)</label> 
+                <input class="form-control" type="text"  name="buying" id="buying" placeholder="v-high / high / med / low" aria-label="Enter data">
+            </div>
+        <br>
+        
+            <div class="col-xs-4">
+                <h3>Maintenance:</h3>
+                <label for="maint">(Maintenance price of car)</label> 
+                <input class="form-control" type="text" name="maint" id="maint" placeholder="v-high / high / med / low" aria-label="Enter maint">
+            </div>
+        <br>
+        
+            <div class="col-xs-4">
+                <h3>Doors:</h3>
+                <label for="doors">(Number of doors)</label> 
+                <input class="form-control" type="text" name="doors" id="doors" placeholder="Enter Number of doors " aria-label="Enter doors">
+            </div>
+        <br>
+        
+            <div class="col-xs-4">
+                <h3>Person:</h3>
+                <label for="Persons">(Number of person)</label> 
+                <input class="form-control" type="text" name="Persons" id="persons" placeholder="Enter Number of person" aria-label="Enter person">
+            </div>
+        <br>
+        
+            <div class="col-xs-4">
+                <h3>Lugboot:</h3>
+                <label for="lugboot">(Size of lugboot)</label> 
+                <input class="form-control" type="text" name="lugboot" id="lugboot" placeholder="big / med / small" aria-label="Enter lugboot">
+            </div>
+        <br>
+            <div class="col-xs-4">
+                <h3>Safety:</h3>
+                <label for="safety">(Safety index)</label> 
+                <input class="form-control" type="text" name="safety" id="safety" placeholder="high / med / low" aria-label="Enter safety index">
+            </div>
+        <br>
+        <input type="submit" class="btn btn-success btn-rounded" value="Evaluate">
+
+
+
+    </form>
+    <style>
+body {
+  background-color: snow;
+  opacity:0.9;
+}
+h1 {
+    color: maroon;
+    margin-left: 40px;
+}
+</style>
+{% endblock%}
+
